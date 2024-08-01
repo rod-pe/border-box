@@ -1,0 +1,25 @@
+div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid green;
+}
+
+.com-border-box {
+    background-color: aquamarine;
+    box-sizing: border-box;
+    /* O "border-box" faz com que as medidas de largura e altura de um elemento incluam o padding e a borda, de forma que o tamanho total do elemento permaneça o mesmo, independentemente do padding e da borda aplicados. */
+}
+
+.sem-border-box {
+    background-color: crimson;
+}
+
+/* Sem a propriedade border-box, os elementos ficam dessa forma:
+Largura total = largura + padding esquerdo + padding direito + border direito + border esquerdo
+
+100 + 10 + 10 + 10 + 10 = 140
+
+Altura total = altura + padding superior + padding inferior + border superior + border inferior 
+
+100 + 10 + 10 + 10 + 10 = 140 */
